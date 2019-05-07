@@ -7,6 +7,7 @@ for DIR in *; do
     ( cd "${DIR}"
       if [ -r "Cargo.toml" ]; then
         echo "#### Testing \"${DIR}\" ..."
+        cargo build --verbose
         cargo test --verbose
         echo
       fi
