@@ -1,14 +1,15 @@
 name: Test all projects
 
-on: push
+on: [push, pull_request]
 
 jobs:
-  build:
+  build_test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - uses: docker://rust:slim
-      - run: ./bin/test-all.sh
+      - name: Checkout repository
+        uses: actions/checkout@v1
+      - name: Test all projects
+        run: ./bin/test-all.sh
         if: |
           contains(github.event.commits[0].message, '[skip ci]') == false &&
           contains(github.event.commits[0].message, '[ci skip]') == false
