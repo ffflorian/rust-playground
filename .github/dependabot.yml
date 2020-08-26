@@ -1,0 +1,20 @@
+version: 2
+updates:
+  - package-ecosystem: cargo
+    directory: '/hello-world'
+    schedule:
+      interval: daily
+      time: '07:00'
+      timezone: 'Europe/Berlin'
+    open-pull-requests-limit: 99
+    assignees:
+      - ffflorian
+  - package-ecosystem: cargo
+    directory: '/fibonacci'
+    schedule:
+      interval: daily
+      time: '07:00'
+      timezone: 'Europe/Berlin'
+    open-pull-requests-limit: 99
+    assignees:
+      - ffflorian
