@@ -3,21 +3,21 @@ updates:
   - package-ecosystem: cargo
     directory: '/hello-world'
     schedule:
-      interval: weekly
+      interval: monthly
     open-pull-requests-limit: 99
     assignees:
       - ffflorian
   - package-ecosystem: cargo
     directory: '/fibonacci'
     schedule:
-      interval: weekly
+      interval: monthly
     open-pull-requests-limit: 99
     assignees:
       - ffflorian
-  - package-ecosystem: 'github-actions'
+  - package-ecosystem: github-actions
     directory: '/'
     schedule:
-      interval: weekly
+      interval: monthly
     open-pull-requests-limit: 99
     assignees:
       - ffflorian
