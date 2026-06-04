@@ -12,7 +12,7 @@ jobs:
       contents: read
     runs-on: ubuntu-latest
     steps:
-      - uses: ffflorian/actions/git-mirror@697d595c21f59c1c4b46ff162d3935994cac377a
+      - uses: ffflorian/actions/git-mirror@395dd69a8fe27cbaaf9ee09ebfaeefaf92dfdda5
         with:
           GITLAB_REMOTE: 'git@gitlab.com:ffflorian/rust-playground.git'
           GITLAB_SECRET: ${{ secrets.GITLAB_SECRET }}
